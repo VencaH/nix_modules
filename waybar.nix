@@ -194,7 +194,7 @@ programs.waybar = {
         format = "  {usage}%";
       };
       disk = {
-        format = " {percentage_used}%";
+        format = "  {percentage_used}%";
       };
       memory = {
         format = "󰍛 {percentage}%";
