@@ -5,6 +5,7 @@
 	settings = {
 		theme = "catppuccin_mocha";
 		editor = {
+		true-color = true;
 			line-number = "relative";
 			lsp.display-messages = true;
       lsp.display-inlay-hints = true;
