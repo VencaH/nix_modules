@@ -12,9 +12,21 @@
 		};
 	};
 	languages = with pkgs; {
-		language = [{
-			name = "rust";
-		}];
+		language = [		
+			{
+				name = "ocaml";
+				formatter = {
+					command = "ocamlformat";
+					args = [
+						"-"
+						"--impl"
+					];
+				};
+			}
+			{
+				name = "rust";
+			}
+		];
 		language-server = {
 			rust-analyzer = {
 				config = {
@@ -25,12 +37,15 @@
 				    "server"
 				    ];
             };
-          inlayHints.bindingModeHints.enable = false;
-          inlayHints.closingBraceHints.minLines = 10;
-          inlayHints.closureReturnTypeHints.enable = "with_block";
-          inlayHints.discriminantHints.enable = "fieldless";
-          inlayHints.lifetimeElisionHints.enable = "skip_trivial";
-          inlayHints.typeHints.hideClosureInitialization = false;  
+          inlayHints = 
+					{
+						bindingModeHints.enable = false;
+	          closingBraceHints.minLines = 10;
+	          closureReturnTypeHints.enable = "with_block";
+	          discriminantHints.enable = "fieldless";
+	          lifetimeElisionHints.enable = "skip_trivial";
+	          typeHints.hideClosureInitialization = false;  
+					};
         };
 			};
 		};
