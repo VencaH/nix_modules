@@ -23,12 +23,12 @@
        bind = 
        [
          "$mod, F, exec, firefox"
-      	 "$mod, K, exec, kitty"
+      	 "$mod, T, exec, alacritty"
       	 "$mod, Space, exec, rofi -show drun -show-icons -theme ~/catppuccin/rofi/launcher.rasi"
          "ALT, Tab, cyclenext"
          "ALT, F4, exec, wlogout"
          "$mod, Enter, togglefloating"
-         "$mod CTRL, Enter, fakefullscreen"
+         "$mod, CTRL Enter, fullscreenstate"
        ]
        ++ (
         builtins.concatLists (builtins.genList (
