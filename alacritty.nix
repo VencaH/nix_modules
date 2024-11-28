@@ -1,10 +1,10 @@
-{ congif, pkgs, ... }:
+{ config, pkgs, ... }:
 {
 
 programs.alacritty = {
   enable = true;
   settings = {
-  shell.program = "zellij";
+  terminal.shell.program = "zellij";
     colors = {
       primary = {
         background = "#1E1E2E";
