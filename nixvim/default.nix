@@ -18,10 +18,6 @@
 	  enable = true;
 	};
 	
-	luasnip = {
-	  enable = true;
-	};
-	
     undotree = {
 	  enable = true;
 	};
@@ -38,6 +34,7 @@
 
   imports = [
     ./keymaps.nix
+    ./plugins/luasnip.nix
     ./plugins/lsp.nix
     ./plugins/treesitter.nix
     ./plugins/cmp.nix
