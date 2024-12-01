@@ -13,8 +13,17 @@
           };
         };
       };
-      nil_ls.enable = true;
+      nil_ls = {
+        enable = true;
+        settings = {
+          formatting.command = ["nixpkgs-fmt"];
+          nix.flake = {
+            autoArchive = true;
+          };
+        };
+      };
       texlab.enable = true;
+      gleam.enable = true;
     # ocamllsp.enable = true;
     };
   };
