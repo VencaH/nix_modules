@@ -24,6 +24,7 @@
       };
       texlab.enable = true;
       gleam.enable = true;
+      python.enable = true;
     # ocamllsp.enable = true;
     };
   };
