@@ -14,10 +14,6 @@
   	lualine.enable  = true;
 #    askpass.enable = true;
 
-	telescope = {
-	  enable = true;
-	};
-	
     undotree = {
 	  enable = true;
 	};
@@ -39,5 +35,6 @@
     ./plugins/treesitter.nix
     ./plugins/cmp.nix
     ./plugins/noice.nix
+    ./plugins/telescope.nix
   ];
 }
