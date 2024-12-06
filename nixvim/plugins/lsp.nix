@@ -1,6 +1,8 @@
+{ pkgs, ... }:
 {
   plugins.lsp = {
     enable = true;
+    inlayHints = true;
     servers = {
       lua_ls.enable = true;
       rust_analyzer = {
@@ -24,8 +26,12 @@
       };
       texlab.enable = true;
       gleam.enable = true;
-      python.enable = true;
-    # ocamllsp.enable = true;
+      pylsp.enable = true;
+      ocamllsp = {
+        enable = true;
+        package = pkgs.ocamlPackages.ocaml-lsp;
+
+      };    
     };
   };
 }
